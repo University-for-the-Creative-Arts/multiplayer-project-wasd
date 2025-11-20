@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2106125.ucreative\\documents\\unreal projects\\multiplayerproject\\source\\multiplayerproject\\variant_sidescrolling\\sidescrollingcameramanager.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2106125.ucreative\\documents\\unreal projects\\multiplayerproject\\intermediate\\build\\win64\\x64\\multiplayerprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\2106125.ucreative\\documents\\unreal projects\\multiplayerproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\multiplayerproject\\definitions.multiplayerproject.h",
+            "c:\\users\\2106125.ucreative\\documents\\unreal projects\\multiplayerproject\\source\\multiplayerproject\\variant_sidescrolling\\sidescrollingcameramanager.h",
+            "c:\\users\\2106125.ucreative\\documents\\unreal projects\\multiplayerproject\\intermediate\\build\\win64\\unrealeditor\\inc\\multiplayerproject\\uht\\sidescrollingcameramanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
