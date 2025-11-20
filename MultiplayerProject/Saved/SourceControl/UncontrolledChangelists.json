@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/2304613.UCREATIVE/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Widgets/WBP_Menu.uasset",
+				"C:/Users/2304613.UCREATIVE/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Blueprints/BP_GameInstance.uasset",
+				"C:/Users/2304613.UCREATIVE/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Level/L_Menu.umap",
 				"C:/Users/2106125.UCREATIVE/Documents/Unreal Projects/MultiplayerProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/8M/GM7QFGVXOFU701XGT0IAC9.uasset",
 				"C:/Users/2106125.UCREATIVE/Documents/Unreal Projects/MultiplayerProject/Content/ThirdPerson/Lvl_ThirdPerson.umap"
 			]
