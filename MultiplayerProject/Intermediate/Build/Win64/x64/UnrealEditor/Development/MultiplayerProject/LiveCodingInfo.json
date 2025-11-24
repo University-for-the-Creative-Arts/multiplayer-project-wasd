@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.MultiplayerProject.1.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
 			"AnimNotify_CheckChargedAttack.gen.cpp.obj",
 			"AnimNotify_CheckCombo.gen.cpp.obj",
 			"AnimNotify_DoAttackTrace.gen.cpp.obj",
@@ -21,14 +22,13 @@
 			"CombatLavaFloor.gen.cpp.obj",
 			"CombatLifeBar.gen.cpp.obj",
 			"CombatPlayerController.gen.cpp.obj",
-			"CombatStateTreeUtility.gen.cpp.obj"
-		],
-		"Module.MultiplayerProject.2.cpp.obj": [
+			"CombatStateTreeUtility.gen.cpp.obj",
 			"EnvQueryContext_Player.gen.cpp.obj",
 			"MultiplayerProject.init.gen.cpp.obj",
 			"MultiplayerProjectCharacter.gen.cpp.obj",
 			"MultiplayerProjectGameMode.gen.cpp.obj",
 			"MultiplayerProjectPlayerController.gen.cpp.obj",
+			"ObstacleSpawner.gen.cpp.obj",
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
@@ -44,8 +44,9 @@
 			"SideScrollingPlayerController.gen.cpp.obj",
 			"SideScrollingSoftPlatform.gen.cpp.obj",
 			"SideScrollingStateTreeUtility.gen.cpp.obj",
-			"SideScrollingUI.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
+			"SideScrollingUI.gen.cpp.obj"
+		],
+		"Module.MultiplayerProject.2.cpp.obj": [
 			"MultiplayerProject.cpp.obj",
 			"MultiplayerProjectCharacter.cpp.obj",
 			"MultiplayerProjectGameMode.cpp.obj",
@@ -71,7 +72,23 @@
 			"CombatDamageable.cpp.obj",
 			"CombatLifeBar.cpp.obj",
 			"AnimNotify_EndDash.cpp.obj",
-			"PlatformingCharacter.cpp.obj"
+			"PlatformingCharacter.cpp.obj",
+			"PlatformingGameMode.cpp.obj",
+			"PlatformingPlayerController.cpp.obj",
+			"SideScrollingAIController.cpp.obj",
+			"SideScrollingNPC.cpp.obj",
+			"SideScrollingStateTreeUtility.cpp.obj",
+			"SideScrollingJumpPad.cpp.obj",
+			"SideScrollingMovingPlatform.cpp.obj",
+			"SideScrollingPickup.cpp.obj",
+			"SideScrollingSoftPlatform.cpp.obj",
+			"SideScrollingInteractable.cpp.obj",
+			"SideScrollingCameraManager.cpp.obj",
+			"SideScrollingCharacter.cpp.obj",
+			"SideScrollingGameMode.cpp.obj",
+			"SideScrollingPlayerController.cpp.obj",
+			"SideScrollingUI.cpp.obj",
+			"ObstacleSpawner.cpp.obj"
 		]
 	}
 }

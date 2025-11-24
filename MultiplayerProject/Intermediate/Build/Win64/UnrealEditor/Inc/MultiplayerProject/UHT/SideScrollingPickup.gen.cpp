@@ -224,14 +224,14 @@ ASideScrollingPickup::~ASideScrollingPickup() {}
 // ********** End Class ASideScrollingPickup *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingPickup, ASideScrollingPickup::StaticClass, TEXT("ASideScrollingPickup"), &Z_Registration_Info_UClass_ASideScrollingPickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingPickup), 1601975034U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_3572554050(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_3572554050(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

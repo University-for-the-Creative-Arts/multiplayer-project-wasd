@@ -106,14 +106,14 @@ UAnimNotify_EndDash::~UAnimNotify_EndDash() {}
 // ********** End Class UAnimNotify_EndDash ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UAnimNotify_EndDash, UAnimNotify_EndDash::StaticClass, TEXT("UAnimNotify_EndDash"), &Z_Registration_Info_UClass_UAnimNotify_EndDash, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAnimNotify_EndDash), 324637181U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_4247615268(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_UCREATIVE_Documents_Unreal_Projects_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_4247615268(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

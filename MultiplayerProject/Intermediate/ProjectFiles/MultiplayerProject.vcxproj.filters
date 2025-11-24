@@ -304,6 +304,18 @@
     <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProjectPlayerController.h">
       <Filter>Source\MultiplayerProject</Filter>
     </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Private">
+      <UniqueIdentifier>{1B37FCE7-8B50-3346-956F-F91CABA08773}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Private\ObstacleSpawner.cpp">
+      <Filter>Source\MultiplayerProject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerProject\Public">
+      <UniqueIdentifier>{DB6CF28F-9C10-345B-B00E-4FF3EADF840C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Public\ObstacleSpawner.h">
+      <Filter>Source\MultiplayerProject\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\MultiplayerProject\Variant_Combat">
       <UniqueIdentifier>{B5A8C4C0-7D5A-36C3-ADD6-365903FB7C9B}</UniqueIdentifier>
     </Filter>
