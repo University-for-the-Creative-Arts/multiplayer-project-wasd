@@ -19,8 +19,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AObstacleSpawner *********************************************************
 #define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execEndSpawningAndClearObstacles); \
-	DECLARE_FUNCTION(execStartSpawningTimer); \
-	DECLARE_FUNCTION(execConfigureSpawner); \
 	DECLARE_FUNCTION(execSpawnAllObstaclesAtOnce); \
 	DECLARE_FUNCTION(execSpawnObstacle);
 

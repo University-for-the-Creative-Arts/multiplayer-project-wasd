@@ -20,54 +20,6 @@ MULTIPLAYERPROJECT_API UClass* Z_Construct_UClass_AObstacleSpawner_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MultiplayerProject();
 // ********** End Cross Module References **********************************************************
 
-// ********** Begin Class AObstacleSpawner Function ConfigureSpawner *******************************
-struct Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics
-{
-	struct ObstacleSpawner_eventConfigureSpawner_Parms
-	{
-		float NewSpawnRate;
-		int32 NewMaxConcurrentObstacles;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Spawning|Control" },
-		{ "ModuleRelativePath", "Public/ObstacleSpawner.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_NewSpawnRate;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_NewMaxConcurrentObstacles;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::NewProp_NewSpawnRate = { "NewSpawnRate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ObstacleSpawner_eventConfigureSpawner_Parms, NewSpawnRate), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::NewProp_NewMaxConcurrentObstacles = { "NewMaxConcurrentObstacles", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ObstacleSpawner_eventConfigureSpawner_Parms, NewMaxConcurrentObstacles), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::NewProp_NewSpawnRate,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::NewProp_NewMaxConcurrentObstacles,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AObstacleSpawner, nullptr, "ConfigureSpawner", Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::PropPointers), sizeof(Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::ObstacleSpawner_eventConfigureSpawner_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::Function_MetaDataParams), Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::ObstacleSpawner_eventConfigureSpawner_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(AObstacleSpawner::execConfigureSpawner)
-{
-	P_GET_PROPERTY(FFloatProperty,Z_Param_NewSpawnRate);
-	P_GET_PROPERTY(FIntProperty,Z_Param_NewMaxConcurrentObstacles);
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->ConfigureSpawner(Z_Param_NewSpawnRate,Z_Param_NewMaxConcurrentObstacles);
-	P_NATIVE_END;
-}
-// ********** End Class AObstacleSpawner Function ConfigureSpawner *********************************
-
 // ********** Begin Class AObstacleSpawner Function EndSpawningAndClearObstacles *******************
 struct Z_Construct_UFunction_AObstacleSpawner_EndSpawningAndClearObstacles_Statics
 {
@@ -158,46 +110,14 @@ DEFINE_FUNCTION(AObstacleSpawner::execSpawnObstacle)
 }
 // ********** End Class AObstacleSpawner Function SpawnObstacle ************************************
 
-// ********** Begin Class AObstacleSpawner Function StartSpawningTimer *****************************
-struct Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Public/ObstacleSpawner.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AObstacleSpawner, nullptr, "StartSpawningTimer", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer_Statics::Function_MetaDataParams), Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(AObstacleSpawner::execStartSpawningTimer)
-{
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->StartSpawningTimer();
-	P_NATIVE_END;
-}
-// ********** End Class AObstacleSpawner Function StartSpawningTimer *******************************
-
 // ********** Begin Class AObstacleSpawner *********************************************************
 void AObstacleSpawner::StaticRegisterNativesAObstacleSpawner()
 {
 	UClass* Class = AObstacleSpawner::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "ConfigureSpawner", &AObstacleSpawner::execConfigureSpawner },
 		{ "EndSpawningAndClearObstacles", &AObstacleSpawner::execEndSpawningAndClearObstacles },
 		{ "SpawnAllObstaclesAtOnce", &AObstacleSpawner::execSpawnAllObstaclesAtOnce },
 		{ "SpawnObstacle", &AObstacleSpawner::execSpawnObstacle },
-		{ "StartSpawningTimer", &AObstacleSpawner::execStartSpawningTimer },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -282,11 +202,9 @@ struct Z_Construct_UClass_AObstacleSpawner_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AObstacleSpawner_ConfigureSpawner, "ConfigureSpawner" }, // 988090478
 		{ &Z_Construct_UFunction_AObstacleSpawner_EndSpawningAndClearObstacles, "EndSpawningAndClearObstacles" }, // 2214238023
 		{ &Z_Construct_UFunction_AObstacleSpawner_SpawnAllObstaclesAtOnce, "SpawnAllObstaclesAtOnce" }, // 2637497381
 		{ &Z_Construct_UFunction_AObstacleSpawner_SpawnObstacle, "SpawnObstacle" }, // 507633048
-		{ &Z_Construct_UFunction_AObstacleSpawner_StartSpawningTimer, "StartSpawningTimer" }, // 139635052
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -347,10 +265,10 @@ AObstacleSpawner::~AObstacleSpawner() {}
 struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AObstacleSpawner, AObstacleSpawner::StaticClass, TEXT("AObstacleSpawner"), &Z_Registration_Info_UClass_AObstacleSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacleSpawner), 2751781513U) },
+		{ Z_Construct_UClass_AObstacleSpawner, AObstacleSpawner::StaticClass, TEXT("AObstacleSpawner"), &Z_Registration_Info_UClass_AObstacleSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacleSpawner), 661643735U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_2522580599(TEXT("/Script/MultiplayerProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_1231295088(TEXT("/Script/MultiplayerProject"),
 	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
