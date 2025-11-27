@@ -12,7 +12,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCombatGameMode() {}
 
 // ********** Begin Cross Module References ********************************************************
-ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
+ENGINE_API UClass* Z_Construct_UClass_AGameMode();
 MULTIPLAYERPROJECT_API UClass* Z_Construct_UClass_ACombatGameMode();
 MULTIPLAYERPROJECT_API UClass* Z_Construct_UClass_ACombatGameMode_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MultiplayerProject();
@@ -74,7 +74,7 @@ struct Z_Construct_UClass_ACombatGameMode_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 UObject* (*const Z_Construct_UClass_ACombatGameMode_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_AGameModeBase,
+	(UObject* (*)())Z_Construct_UClass_AGameMode,
 	(UObject* (*)())Z_Construct_UPackage__Script_MultiplayerProject,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACombatGameMode_Statics::DependentSingletons) < 16);
@@ -106,14 +106,14 @@ ACombatGameMode::~ACombatGameMode() {}
 // ********** End Class ACombatGameMode ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACombatGameMode, ACombatGameMode::StaticClass, TEXT("ACombatGameMode"), &Z_Registration_Info_UClass_ACombatGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatGameMode), 2792454948U) },
+		{ Z_Construct_UClass_ACombatGameMode, ACombatGameMode::StaticClass, TEXT("ACombatGameMode"), &Z_Registration_Info_UClass_ACombatGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatGameMode), 1104017054U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_3783194609(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_2853852944(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatGameMode_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

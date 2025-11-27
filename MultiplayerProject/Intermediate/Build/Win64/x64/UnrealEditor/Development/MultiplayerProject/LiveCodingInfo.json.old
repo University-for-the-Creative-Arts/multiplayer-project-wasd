@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.MultiplayerProject.1.cpp.obj": [
+			"GameStateTimer.gen.cpp.obj",
 			"AnimNotify_CheckChargedAttack.gen.cpp.obj",
 			"AnimNotify_CheckCombo.gen.cpp.obj",
 			"AnimNotify_DoAttackTrace.gen.cpp.obj",
@@ -21,10 +22,24 @@
 			"CombatLavaFloor.gen.cpp.obj",
 			"CombatLifeBar.gen.cpp.obj",
 			"CombatPlayerController.gen.cpp.obj",
-			"CombatStateTreeUtility.gen.cpp.obj"
+			"CombatStateTreeUtility.gen.cpp.obj",
+			"EnvQueryContext_Player.gen.cpp.obj"
 		],
 		"Module.MultiplayerProject.2.cpp.obj": [
-			"EnvQueryContext_Player.gen.cpp.obj",
+			"MultiplayerProject.cpp.obj",
+			"MultiplayerProjectCharacter.cpp.obj",
+			"MultiplayerProjectGameMode.cpp.obj",
+			"MultiplayerProjectPlayerController.cpp.obj",
+			"ObstacleSpawner.cpp.obj",
+			"CombatAIController.cpp.obj",
+			"CombatEnemy.cpp.obj",
+			"CombatEnemySpawner.cpp.obj",
+			"CombatStateTreeUtility.cpp.obj",
+			"EnvQueryContext_Player.cpp.obj",
+			"AnimNotify_CheckChargedAttack.cpp.obj",
+			"AnimNotify_CheckCombo.cpp.obj",
+			"AnimNotify_DoAttackTrace.cpp.obj",
+			"CombatCharacter.cpp.obj",
 			"MultiplayerProject.init.gen.cpp.obj",
 			"MultiplayerProjectCharacter.gen.cpp.obj",
 			"MultiplayerProjectGameMode.gen.cpp.obj",
@@ -47,20 +62,7 @@
 			"SideScrollingStateTreeUtility.gen.cpp.obj",
 			"SideScrollingUI.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
-			"MultiplayerProject.cpp.obj",
-			"MultiplayerProjectCharacter.cpp.obj",
-			"MultiplayerProjectGameMode.cpp.obj",
-			"MultiplayerProjectPlayerController.cpp.obj",
-			"CombatAIController.cpp.obj",
-			"CombatEnemy.cpp.obj",
-			"CombatEnemySpawner.cpp.obj",
-			"CombatStateTreeUtility.cpp.obj",
-			"EnvQueryContext_Player.cpp.obj",
-			"AnimNotify_CheckChargedAttack.cpp.obj",
-			"AnimNotify_CheckCombo.cpp.obj",
-			"AnimNotify_DoAttackTrace.cpp.obj",
-			"CombatCharacter.cpp.obj",
-			"ObstacleSpawner.cpp.obj"
+			"GameStateTimer.cpp.obj"
 		],
 		"Module.MultiplayerProject.3.cpp.obj": [
 			"CombatGameMode.cpp.obj",

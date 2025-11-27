@@ -11,6 +11,7 @@
     <None Include="..\..\Source\MultiplayerProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <None Include="..\..\steam_appid.txt" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -306,12 +307,18 @@
     <Filter Include="Source\MultiplayerProject\Private">
       <UniqueIdentifier>{1B37FCE7-8B50-3346-956F-F91CABA08773}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Private\GameStateTimer.cpp">
+      <Filter>Source\MultiplayerProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerProject\Private\ObstacleSpawner.cpp">
       <Filter>Source\MultiplayerProject\Private</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerProject\Public">
       <UniqueIdentifier>{DB6CF28F-9C10-345B-B00E-4FF3EADF840C}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Public\GameStateTimer.h">
+      <Filter>Source\MultiplayerProject\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\MultiplayerProject\Public\ObstacleSpawner.h">
       <Filter>Source\MultiplayerProject\Public</Filter>
     </ClInclude>

@@ -91,7 +91,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DA7062A2-C81E-309A-8D8B-7C3F0999B83B}</ProjectGuid>
+    <ProjectGuid>{CD926226-5C0C-388F-8A2B-24295736CC0E}</ProjectGuid>
     <RootNamespace>MultiplayerProject</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -562,6 +562,7 @@
     <None Include="..\..\MultiplayerProject.uproject"/>
     <None Include="..\..\Source\MultiplayerProject.Target.cs"/>
     <None Include="..\..\Source\MultiplayerProjectEditor.Target.cs"/>
+    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\steam_appid.txt"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
@@ -736,10 +737,15 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
     </ClCompile>
     <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProjectPlayerController.h"/>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Private\GameStateTimer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerProject\Private\ObstacleSpawner.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
     </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Public\GameStateTimer.h"/>
     <ClInclude Include="..\..\Source\MultiplayerProject\Public\ObstacleSpawner.h"/>
     <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
