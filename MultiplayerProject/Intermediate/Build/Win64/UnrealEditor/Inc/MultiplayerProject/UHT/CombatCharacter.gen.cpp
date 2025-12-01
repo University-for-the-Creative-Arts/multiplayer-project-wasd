@@ -337,6 +337,41 @@ DEFINE_FUNCTION(ACombatCharacter::execDoMove)
 }
 // ********** End Class ACombatCharacter Function DoMove *******************************************
 
+// ********** Begin Class ACombatCharacter Function OnRep_CurrentHP ********************************
+struct Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// <-- 3. Declare the RepNotify function\n" },
+#endif
+		{ "ModuleRelativePath", "Variant_Combat/CombatCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "<-- 3. Declare the RepNotify function" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ACombatCharacter, nullptr, "OnRep_CurrentHP", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ACombatCharacter::execOnRep_CurrentHP)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRep_CurrentHP();
+	P_NATIVE_END;
+}
+// ********** End Class ACombatCharacter Function OnRep_CurrentHP **********************************
+
 // ********** Begin Class ACombatCharacter Function ReceivedDamage *********************************
 struct CombatCharacter_eventReceivedDamage_Parms
 {
@@ -413,6 +448,7 @@ void ACombatCharacter::StaticRegisterNativesACombatCharacter()
 		{ "DoComboAttackStart", &ACombatCharacter::execDoComboAttackStart },
 		{ "DoLook", &ACombatCharacter::execDoLook },
 		{ "DoMove", &ACombatCharacter::execDoMove },
+		{ "OnRep_CurrentHP", &ACombatCharacter::execOnRep_CurrentHP },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -828,6 +864,7 @@ struct Z_Construct_UClass_ACombatCharacter_Statics
 		{ &Z_Construct_UFunction_ACombatCharacter_DoComboAttackStart, "DoComboAttackStart" }, // 4275206610
 		{ &Z_Construct_UFunction_ACombatCharacter_DoLook, "DoLook" }, // 2872170816
 		{ &Z_Construct_UFunction_ACombatCharacter_DoMove, "DoMove" }, // 2611015871
+		{ &Z_Construct_UFunction_ACombatCharacter_OnRep_CurrentHP, "OnRep_CurrentHP" }, // 2249339816
 		{ &Z_Construct_UFunction_ACombatCharacter_ReceivedDamage, "ReceivedDamage" }, // 1850734294
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -847,7 +884,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACombatCharact
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_ComboAttackAction = { "ComboAttackAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, ComboAttackAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ComboAttackAction_MetaData), NewProp_ComboAttackAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_ChargedAttackAction = { "ChargedAttackAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, ChargedAttackAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ChargedAttackAction_MetaData), NewProp_ChargedAttackAction_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_MaxHP = { "MaxHP", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, MaxHP), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHP_MetaData), NewProp_MaxHP_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_CurrentHP = { "CurrentHP", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, CurrentHP), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentHP_MetaData), NewProp_CurrentHP_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_CurrentHP = { "CurrentHP", "OnRep_CurrentHP", (EPropertyFlags)0x0020080100020021, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, CurrentHP), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentHP_MetaData), NewProp_CurrentHP_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_LifeBarColor = { "LifeBarColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, LifeBarColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LifeBarColor_MetaData), NewProp_LifeBarColor_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_PelvisBoneName = { "PelvisBoneName", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, PelvisBoneName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PelvisBoneName_MetaData), NewProp_PelvisBoneName_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACombatCharacter_Statics::NewProp_LifeBarWidget = { "LifeBarWidget", nullptr, (EPropertyFlags)0x0124080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACombatCharacter, LifeBarWidget), Z_Construct_UClass_UCombatLifeBar_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LifeBarWidget_MetaData), NewProp_LifeBarWidget_MetaData) };
@@ -932,19 +969,28 @@ UClass* Z_Construct_UClass_ACombatCharacter()
 	}
 	return Z_Registration_Info_UClass_ACombatCharacter.OuterSingleton;
 }
+#if VALIDATE_CLASS_REPS
+void ACombatCharacter::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
+{
+	static FName Name_CurrentHP(TEXT("CurrentHP"));
+	const bool bIsValid = true
+		&& Name_CurrentHP == ClassReps[(int32)ENetFields_Private::CurrentHP].Property->GetFName();
+	checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ACombatCharacter"));
+}
+#endif
 DEFINE_VTABLE_PTR_HELPER_CTOR(ACombatCharacter);
 ACombatCharacter::~ACombatCharacter() {}
 // ********** End Class ACombatCharacter ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACombatCharacter, ACombatCharacter::StaticClass, TEXT("ACombatCharacter"), &Z_Registration_Info_UClass_ACombatCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatCharacter), 3099933331U) },
+		{ Z_Construct_UClass_ACombatCharacter, ACombatCharacter::StaticClass, TEXT("ACombatCharacter"), &Z_Registration_Info_UClass_ACombatCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatCharacter), 1091576345U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_1256091084(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_2388914552(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -15,6 +15,7 @@
 #include "TimerManager.h"
 #include "Engine/LocalPlayer.h"
 #include "CombatPlayerController.h"
+#include "Net/UnrealNetwork.h"
 
 ACombatCharacter::ACombatCharacter()
 {
@@ -49,6 +50,31 @@ ACombatCharacter::ACombatCharacter()
 
 	// set the player tag
 	Tags.Add(FName("Player"));
+}
+
+void ACombatCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	// DOREPLIFETIME tells the engine to replicate CurrentHP to all clients
+	DOREPLIFETIME(ACombatCharacter, CurrentHP);
+}
+
+void ACombatCharacter::OnRep_CurrentHP()
+{
+	// This function is called on the client when CurrentHP is replicated from the server.
+    
+	// Check if the character is still alive before updating the UI
+	if (CurrentHP > 0.0f)
+	{
+		// 1. Check if the widget is valid
+		if (LifeBarWidget)
+		{
+			// 2. Update the life bar on the client's screen
+			LifeBarWidget->SetLifePercentage(CurrentHP / MaxHP);
+		}
+	}
+	// If CurrentHP is <= 0.0f, the HandleDeath function already handled the hiding/logic.
 }
 
 void ACombatCharacter::Move(const FInputActionValue& Value)
@@ -395,15 +421,23 @@ float ACombatCharacter::TakeDamage(float Damage, struct FDamageEvent const& Dama
 		// die
 		HandleDeath();
 	}
-	else
-	{
-		// update the life bar
-		LifeBarWidget->SetLifePercentage(CurrentHP / MaxHP);
+    
+	// The key change: REMOVE the old direct widget update and call the RepNotify function.
+	// LifeBarWidget->SetLifePercentage(CurrentHP / MaxHP); // <-- REMOVE THIS LINE!
 
+	// The Server must manually call OnRep_CurrentHP() to update its own local UI.
+	// The engine automatically handles replication to clients, which then call it automatically.
+	OnRep_CurrentHP();
+
+	// The old partial ragdoll logic can stay or be moved to the RepNotify, 
+	// but leaving it here is fine as it's purely visual/physical on the server.
+	if (CurrentHP > 0.0f)
+	{
 		// enable partial ragdoll physics, but keep the pelvis vertical
 		GetMesh()->SetPhysicsBlendWeight(0.5f);
 		GetMesh()->SetBodySimulatePhysics(PelvisBoneName, false);
 	}
+
 
 	// return the received damage amount
 	return Damage;

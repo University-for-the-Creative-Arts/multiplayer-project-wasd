@@ -74,7 +74,7 @@ protected:
 	float MaxHP = 5.0f;
 
 	/** Current amount of HP the character has */
-	UPROPERTY(VisibleAnywhere, Category="Damage")
+	UPROPERTY(VisibleAnywhere, ReplicatedUsing = OnRep_CurrentHP, Category="Damage")
 	float CurrentHP = 0.0f;
 
 	/** Life bar widget fill color */
@@ -274,6 +274,11 @@ public:
 
 	/** Overrides landing to reset damage ragdoll physics */
 	virtual void Landed(const FHitResult& Hit) override;
+	
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+	UFUNCTION() // <-- 3. Declare the RepNotify function
+	void OnRep_CurrentHP();
 
 protected:
 

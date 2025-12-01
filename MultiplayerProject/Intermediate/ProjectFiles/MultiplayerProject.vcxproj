@@ -562,7 +562,6 @@
     <None Include="..\..\MultiplayerProject.uproject"/>
     <None Include="..\..\Source\MultiplayerProject.Target.cs"/>
     <None Include="..\..\Source\MultiplayerProjectEditor.Target.cs"/>
-    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\steam_appid.txt"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
