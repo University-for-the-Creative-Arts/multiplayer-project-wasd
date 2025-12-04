@@ -40,9 +40,9 @@ Team collaboration happened through GitHub and frequent testing sessions. We use
 
 ## Gameplay Preview
 
-![Timer GIF](assets/MultiplayerTimer.gif)
+![Timer GIF](Assets/MultiplayerTimer.gif)
 
-![Timer Screenshot](assets/MultiplayerTimer.png)
+![Timer Screenshot](Assets/MultiplayerTimer.png)
 
 
 
