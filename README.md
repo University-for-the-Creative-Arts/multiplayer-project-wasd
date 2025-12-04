@@ -38,5 +38,13 @@ Collaboration and Playtesting
 
 Team collaboration happened through GitHub and frequent testing sessions. We used Unreal’s “Play as Client/Server” mode and also tested using standalone builds connected through Advanced Sessions. These tests helped us confirm that replication worked correctly and that all players saw consistent results. GitHub made collaboration smooth, especially when merging different gameplay systems together.
 
+## Gameplay Preview
+
+![Timer GIF](assets/MultiplayerTimer.gif)
+
+![Timer Screenshot](assets/MultiplayerTimer.png)
+
+
+
 Declared Assets:
 Chat GPT used for summarising work
