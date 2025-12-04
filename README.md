@@ -48,3 +48,58 @@ Team collaboration happened through GitHub and frequent testing sessions. We use
 
 Declared Assets:
 Chat GPT used for summarising work
+
+# Sidd
+
+This commentary covers the implementation of networking and core systems in the Unreal Engine 5.6 project, as demonstrated by the provided `AObstacleSpawner` code.
+
+## Networking Implementation and Configuration
+
+The networking for this project appears to rely on **Unreal Engine's built-in Replication System** combined with the **Advanced Sessions Plugin**.
+
+* **Core Replication:** The `AObstacleSpawner` class is explicitly configured for networking:
+    * `AObstacleSpawner::AObstacleSpawner()` sets **`bReplicates = true`**, making the Actor network-aware.
+    * The `SpawnedObstacles` array is marked with **`UPROPERTY(VisibleAnywhere, Replicated, ...)`** and registered in **`GetLifetimeReplicatedProps`** using **`DOREPLIFETIME(AObstacleSpawner, SpawnedObstacles)`**. This ensures that the server's list of spawned obstacles is automatically synchronized to all connected clients.
+    * Game logic that modifies the world, such as `SpawnObstacle()` and `EndSpawningAndClearObstacles()`, is protected by **`if (HasAuthority())`** checks, guaranteeing that state changes (like spawning/destroying Actors) are initiated only by the **server** (or the Actor's owning client if authority is different, though typically the server).
+
+* **Player Connection:** The system uses the **Advanced Sessions Plugin** to facilitate the connection process, which is standard for peer-to-peer or dedicated server setups in Unreal Engine. The flow is:
+    1.  One player uses a **Main Menu** function to **Host** a game (creating a session).
+    2.  Other players use a **Main Menu** function to **Join** the session (connecting to the host/server).
+
+## Player Connection and Replicated Game Parts
+
+### Player Connection Process
+
+The connection process is abstracted by the Advanced Sessions Plugin. When a player hosts, they become the **Network Authority** (the server). Joining players connect as **Clients**. The server is responsible for executing all critical game logic, preventing cheating, and managing the replicated state.
+
+### Replicated Game Parts
+
+The key parts of the game that are replicated include:
+
+1.  **The Obstacle Spawner Actor (`AObstacleSpawner`):** Since `bReplicates` is true, this actor exists and is synchronized on all clients.
+2.  **The Array of Spawned Obstacles (`SpawnedObstacles`):** As a replicated `TArray`, clients will automatically be notified and update their local list whenever the server adds or removes an obstacle reference.
+3.  **The Obstacle Actors:** When the server calls `GetWorld()->SpawnActor(...)` within `SpawnObstacle()`, the spawned `AActor*` (assuming the obstacle class itself is also set to replicate) is automatically synchronized and created on all clients. Similarly, when the server calls `Obstacle->Destroy()` in `EndSpawningAndClearObstacles()`, the destruction is replicated to clients.
+
+The spawning system is designed to ensure a **consistent game state** across all machines, with the server acting as the single source of truth for obstacle creation and placement. The use of **`SpawnAllObstaclesAtOnce()`** in `BeginPlay()` ensures the initial set of obstacles is populated immediately upon game start, but only on the server, which then replicates the state to all clients.
+
+## Tools, Frameworks, and APIs Used
+
+* **Unreal Engine 5.6 C++ Framework:** The core implementation language and engine libraries.
+* **Unreal Replication System:** The fundamental networking mechanism (`bReplicates`, `DOREPLIFETIME`, `HasAuthority()`).
+* **Advanced Sessions Plugin:** Used to manage the **Main Menu** functions for hosting and joining game sessions.
+* **KismetMathLibrary:** Used for mathematical operations like calculating random vector offsets for spawning.
+* **Line Tracing:** The spawning logic uses **`GetWorld()->LineTraceSingleByChannel`** with `ECollisionChannel::ECC_Visibility` to ensure obstacles are spawned accurately on the ground surface within the `SpawnRadius`.
+
+
+## Collaboration During Development and Playtesting
+
+Collaboration was structured using industry-standard tools for remote game development:
+
+- GitHub served as the central Source Control repository. Team members worked on separate features, committing their code and assets, which were then merged via pull requests. This ensures all work is versioned and merge conflicts are managed safely, allowing parallel development.
+
+- Discord was the primary platform for real-time communication and playtesting. Developers used it to coordinate tasks, announce new commits/builds, and gather immediate feedback during networked playtesting sessions (e.g., reporting bugs related to the replicated cube spawning or connection issues).
+
+## Gameplay Preview
+
+![Spawner Screenshot](Assets/SpawnerImage.png)
+
