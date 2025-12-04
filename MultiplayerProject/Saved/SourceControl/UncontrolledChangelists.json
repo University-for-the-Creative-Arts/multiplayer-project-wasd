@@ -5,7 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Variant_Combat/Blueprints/BP_CombatGameMode.uasset"
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Variant_Combat/Blueprints/BP_CombatGameMode.uasset",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/ThirdPerson/Lvl_ThirdPerson.umap",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/Widgets/WBP_GameHUD.uasset",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/2106125/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameState.uasset"
 			]
 		}
 	]

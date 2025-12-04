@@ -632,14 +632,14 @@ ASideScrollingCharacter::~ASideScrollingCharacter() {}
 // ********** End Class ASideScrollingCharacter ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingCharacter, ASideScrollingCharacter::StaticClass, TEXT("ASideScrollingCharacter"), &Z_Registration_Info_UClass_ASideScrollingCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingCharacter), 2108351687U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_2995373077(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_2995373077(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

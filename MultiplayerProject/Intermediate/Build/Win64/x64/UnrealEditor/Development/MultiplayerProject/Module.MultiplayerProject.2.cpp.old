@@ -13,7 +13,6 @@
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/Animation/AnimNotify_CheckChargedAttack.cpp"
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/Animation/AnimNotify_CheckCombo.cpp"
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/Animation/AnimNotify_DoAttackTrace.cpp"
-#include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/CombatCharacter.cpp"
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/CombatGameMode.cpp"
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/CombatPlayerController.cpp"
 #include "C:/Users/2304613/Documents/GitHub/multiplayer-project-wasd/MultiplayerProject/Source/MultiplayerProject/Variant_Combat/Gameplay/CombatActivationVolume.cpp"

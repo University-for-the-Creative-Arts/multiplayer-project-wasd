@@ -180,14 +180,14 @@ ASideScrollingNPC::~ASideScrollingNPC() {}
 // ********** End Class ASideScrollingNPC **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingNPC, ASideScrollingNPC::StaticClass, TEXT("ASideScrollingNPC"), &Z_Registration_Info_UClass_ASideScrollingNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingNPC), 1137876711U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_804939869(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_804939869(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
