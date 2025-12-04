@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AGameStateTimer **********************************************************
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execUpdateTimer); \
 	DECLARE_FUNCTION(execOnRoundEnded); \
 	DECLARE_FUNCTION(execStartRoundTimer);
@@ -25,7 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 MULTIPLAYERPROJECT_API UClass* Z_Construct_UClass_AGameStateTimer_NoRegister();
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGameStateTimer(); \
 	friend struct Z_Construct_UClass_AGameStateTimer_Statics; \
@@ -43,7 +43,7 @@ public: \
 	DECLARE_VALIDATE_GENERATED_REP_ENUMS(NO_API)
 
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AGameStateTimer(AGameStateTimer&&) = delete; \
 	AGameStateTimer(const AGameStateTimer&) = delete; \
@@ -53,13 +53,13 @@ public: \
 	NO_API virtual ~AGameStateTimer();
 
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_12_PROLOG
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_GENERATED_BODY \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_12_PROLOG
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,6 +69,6 @@ class AGameStateTimer;
 // ********** End Class AGameStateTimer ************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h
+#define CURRENT_FILE_ID FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_GameStateTimer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

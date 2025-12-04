@@ -5,6 +5,7 @@
 #include "Kismet/KismetMathLibrary.h" 
 #include "Engine/World.h"     // Required for GetWorld()
 #include "CollisionQueryParams.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 AObstacleSpawner::AObstacleSpawner()
@@ -172,5 +173,12 @@ void AObstacleSpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+void AObstacleSpawner::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	// This macro tells the engine to replicate the SpawnedObstacles array to all clients.
+	DOREPLIFETIME(AObstacleSpawner, SpawnedObstacles);
 }
 

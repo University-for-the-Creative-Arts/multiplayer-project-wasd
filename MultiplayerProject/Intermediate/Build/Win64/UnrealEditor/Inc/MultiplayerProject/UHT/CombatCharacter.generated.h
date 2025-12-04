@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ACombatCharacter *********************************************************
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnRep_CurrentHP); \
 	DECLARE_FUNCTION(execDoChargedAttackEnd); \
 	DECLARE_FUNCTION(execDoChargedAttackStart); \
@@ -27,10 +27,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execDoMove);
 
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_CALLBACK_WRAPPERS
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_CALLBACK_WRAPPERS
 MULTIPLAYERPROJECT_API UClass* Z_Construct_UClass_ACombatCharacter_NoRegister();
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatCharacter(); \
 	friend struct Z_Construct_UClass_ACombatCharacter_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_VALIDATE_GENERATED_REP_ENUMS(NO_API)
 
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatCharacter(ACombatCharacter&&) = delete; \
 	ACombatCharacter(const ACombatCharacter&) = delete; \
@@ -58,14 +58,14 @@ public: \
 	NO_API virtual ~ACombatCharacter();
 
 
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_29_PROLOG
-#define FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_GENERATED_BODY \
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_29_PROLOG
+#define FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_CALLBACK_WRAPPERS \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_INCLASS_NO_PURE_DECLS \
-	FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_ENHANCED_CONSTRUCTORS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_CALLBACK_WRAPPERS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_INCLASS_NO_PURE_DECLS \
+	FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -75,6 +75,6 @@ class ACombatCharacter;
 // ********** End Class ACombatCharacter ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h
+#define CURRENT_FILE_ID FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Variant_Combat_CombatCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

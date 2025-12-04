@@ -36,7 +36,7 @@ protected:
 
 	//FTimerHandle SpawnTimerHandle;
 	
-	UPROPERTY(VisibleAnywhere, Transient, Category = "Spawning")
+	UPROPERTY(VisibleAnywhere, Replicated, Category = "Spawning")
 	TArray<AActor*> SpawnedObstacles;
 
 	UFUNCTION(BlueprintCallable, Category = "Spawning")
@@ -50,7 +50,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+	
 	UFUNCTION(BlueprintCallable, Category = "Spawning")
 	void EndSpawningAndClearObstacles();
 

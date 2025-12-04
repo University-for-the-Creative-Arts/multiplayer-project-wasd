@@ -218,7 +218,7 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObstacleSpawne
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_MinimumClearanceDistance = { "MinimumClearanceDistance", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AObstacleSpawner, MinimumClearanceDistance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinimumClearanceDistance_MetaData), NewProp_MinimumClearanceDistance_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_MaxConcurrentObstacles = { "MaxConcurrentObstacles", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AObstacleSpawner, MaxConcurrentObstacles), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxConcurrentObstacles_MetaData), NewProp_MaxConcurrentObstacles_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_SpawnedObstacles_Inner = { "SpawnedObstacles", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_SpawnedObstacles = { "SpawnedObstacles", nullptr, (EPropertyFlags)0x0020080000022001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AObstacleSpawner, SpawnedObstacles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnedObstacles_MetaData), NewProp_SpawnedObstacles_MetaData) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_SpawnedObstacles = { "SpawnedObstacles", nullptr, (EPropertyFlags)0x0020080000020021, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AObstacleSpawner, SpawnedObstacles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnedObstacles_MetaData), NewProp_SpawnedObstacles_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AObstacleSpawner_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_ObstacleToSpawnClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObstacleSpawner_Statics::NewProp_SpawnRate,
@@ -257,19 +257,28 @@ UClass* Z_Construct_UClass_AObstacleSpawner()
 	}
 	return Z_Registration_Info_UClass_AObstacleSpawner.OuterSingleton;
 }
+#if VALIDATE_CLASS_REPS
+void AObstacleSpawner::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
+{
+	static FName Name_SpawnedObstacles(TEXT("SpawnedObstacles"));
+	const bool bIsValid = true
+		&& Name_SpawnedObstacles == ClassReps[(int32)ENetFields_Private::SpawnedObstacles].Property->GetFName();
+	checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in AObstacleSpawner"));
+}
+#endif
 DEFINE_VTABLE_PTR_HELPER_CTOR(AObstacleSpawner);
 AObstacleSpawner::~AObstacleSpawner() {}
 // ********** End Class AObstacleSpawner ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AObstacleSpawner, AObstacleSpawner::StaticClass, TEXT("AObstacleSpawner"), &Z_Registration_Info_UClass_AObstacleSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacleSpawner), 661643735U) },
+		{ Z_Construct_UClass_AObstacleSpawner, AObstacleSpawner::StaticClass, TEXT("AObstacleSpawner"), &Z_Registration_Info_UClass_AObstacleSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AObstacleSpawner), 262377187U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_1231295088(TEXT("/Script/MultiplayerProject"),
-	Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2106125_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_1801119618(TEXT("/Script/MultiplayerProject"),
+	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_multiplayer_project_wasd_MultiplayerProject_Source_MultiplayerProject_Public_ObstacleSpawner_h__Script_MultiplayerProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
