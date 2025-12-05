@@ -105,3 +105,21 @@ Collaboration was structured using industry-standard tools for remote game devel
 
 ![Spawner Screenshot](Assets/SpawnerImage.png)
 
+ # David
+
+- For this task I have spent two weeks trying to figure out how to put a score board at the top. Initially, the project was using the third person template in C++ from Unreal. It was
+decided at the time that it would make it much easier since the mechanics were already implemented and we can work on further development. I have taken upon the task to add a score
+board that each time a player would kill another their score would go up by one.
+- I had to create a new C++ class that would inherit from "UActorComponent". After I put the code in, I went to edit "CombatScoreComponent.cpp" as well to make sure that the score
+variable would be replicated for every player. The following code lines allowed only the server to manipulate the score "if (GetOwner()->HasAuthority())
+	{
+		float OldScore = Score;
+		Score += PointsToAdd;
+		OnScoreChanged.Broadcast(Score, PointsToAdd);
+	}"
+- I was instructed to change "CombatCharacter.cpp" and modify the "TakeDamage" section and add a new logic that awards points to the killer. Once all the steps were completed I compiled the code and looked in the log but nothing was happening. I had a couple of errors in my code so I tried to fix them and see if the code runs. Even after the compile turned
+green I still was not able to see the score so I thought maybe it is a widget problem. I spent a solid couple of hours in the event graph of the widget but to no use. I have went from
+simple text binding to modifying the "CombatCharacter.cpp" and "CombatCharacter.h" over and over again only to be met with the same result, no score.
+- I was not willing to give up but once I was ready to try again, my team has informed me that the combat mechanics have been scrapped and the project will be kept simple in order to beable to implement the simple features first then focus on adding any extras. This was great news since now the score can go up by just touching the other player and make sure that it works. This time I took a different approach and I created the score through blueprints instead of changing too many codes. I opened "BP_ThirdPersonGameMode" and created a new integer variable as "TotalScore". I created a new widget and hit "Create Binding". In the event graph, I created a chain of events that goes "Get Game Mode -> Cast to BP_ThirdPersonGameMode." and from the blue pin I dragged and "Get TotalScore".
+- Now, in order to get the score to go up, I have added a collison box to "BP_ThirdPersonCharacter". I have binded the box collision to a bone in the right hand of the character so that everytime he is close to the second player the score would go up. Now, to add the logic, on the box I have pressed "On Component Begin Overlap" in order to get the event graph. I have started the chain with a "Do Once" node since collisions happen 100 times per second and I wanted to make sure I get 1 point, not 100. The final logic flow looks like this: Overlap -> Do Once -> Update Score -> Wait 1 Second -> Reset.
+https://github.com/user-attachments/assets/ebb81ef8-07e6-4f04-9e8d-57ff3463eed4 
