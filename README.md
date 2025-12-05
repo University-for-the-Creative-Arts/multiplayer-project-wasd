@@ -101,7 +101,7 @@ Collaboration was structured using industry-standard tools for remote game devel
 
 ## Gameplay Preview
 
-![Spawner GIF](Assets/SpawnerGIF.gif)
+![Spawner GIF](Assets/SpawningReplication.gif)
 
 ![Spawner Screenshot](Assets/SpawnerImage.png)
 
