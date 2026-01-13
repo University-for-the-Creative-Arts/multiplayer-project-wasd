@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2106125\\documents\\github\\multiplayer-project-wasd\\multiplayerproject\\intermediate\\build\\win64\\unrealeditor\\inc\\multiplayerproject\\uht\\gamestatetimer.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2106125\\documents\\github\\multiplayer-project-wasd\\multiplayerproject\\intermediate\\build\\win64\\x64\\multiplayerprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\2106125\\documents\\github\\multiplayer-project-wasd\\multiplayerproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\multiplayerproject\\definitions.multiplayerproject.h",
+            "c:\\users\\2106125\\documents\\github\\multiplayer-project-wasd\\multiplayerproject\\source\\multiplayerproject\\public\\gamestatetimer.h",
+            "c:\\program files\\epic games\\5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestate.h",
+            "c:\\program files\\epic games\\5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
+            "c:\\program files\\epic games\\5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\program files\\epic games\\5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
+            "c:\\program files\\epic games\\5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestate.generated.h",
+            "c:\\users\\2106125\\documents\\github\\multiplayer-project-wasd\\multiplayerproject\\intermediate\\build\\win64\\unrealeditor\\inc\\multiplayerproject\\uht\\gamestatetimer.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

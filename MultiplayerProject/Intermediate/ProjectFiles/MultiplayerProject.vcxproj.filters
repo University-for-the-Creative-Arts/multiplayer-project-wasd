@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\MultiplayerProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MultiplayerProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\MultiplayerProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\steam_appid.txt" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\AdvancedSessions">
+      <UniqueIdentifier>{34FBD4F0-1E3B-3044-ADA7-CA81199DD621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\AdvancedSessions\Source">
+      <UniqueIdentifier>{53AA3BD6-531F-34C1-90BD-61566636E2B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\AdvancedSessions\Source\AdvancedSessions">
+      <UniqueIdentifier>{23F91D80-9E4A-3F98-8378-F4C8B00F4B9D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\AdvancedSessions.Build.cs">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSessions\Source\AdvancedSessions\Classes">
+      <UniqueIdentifier>{9E78B99A-76A3-3C41-BB3F-7B04A3F9AAFD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedExternalUILibrary.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsGameInstance.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsInterface.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsLibrary.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedGameSession.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedIdentityLibrary.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessions.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessionsLibrary.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedVoiceLibrary.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AutoLoginUserCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\BlueprintDataDefinitions.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CancelFindSessionsCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CreateSessionCallbackProxyAdvanced.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\EndSessionCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindFriendSessionCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindSessionsCallbackProxyAdvanced.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetFriendsCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetRecentPlayersCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetUserPrivilegeCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LoginUserCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LogoutUserCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\OnlineSubSystemHeader.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\SendFriendInviteCallbackProxy.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\StartSessionCallbackProxyAdvanced.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\UpdateSessionCallbackProxyAdvanced.h">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\AdvancedSessions\Source\AdvancedSessions\Private">
+      <UniqueIdentifier>{A352E0BB-374F-32C5-964E-D78AA9200CC7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedExternalUILibrary.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedFriendsGameInstance.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedFriendsInterface.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedFriendsLibrary.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedIdentityLibrary.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedSessions.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedSessionsLibrary.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AdvancedVoiceLibrary.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\AutoLoginUserCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\CancelFindSessionsCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\CreateSessionCallbackProxyAdvanced.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\EndSessionCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\FindFriendSessionCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\FindSessionsCallbackProxyAdvanced.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\GetFriendsCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\GetRecentPlayersCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\GetUserPrivilegeCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\LoginUserCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\LogoutUserCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\SendFriendInviteCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\StartSessionCallbackProxyAdvanced.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Private\UpdateSessionCallbackProxyAdvanced.cpp">
+      <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Private</Filter>
+    </ClCompile>
+    <None Include="..\..\Plugins\AdvancedSessions\AdvancedSessions.uplugin">
+      <Filter>Plugins\AdvancedSessions</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSessions\Config">
+      <UniqueIdentifier>{870532F9-B807-3207-98A2-967ED3487D89}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSessions\Config\FilterPlugin.ini">
+      <Filter>Plugins\AdvancedSessions\Config</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSessions\Resources">
+      <UniqueIdentifier>{3A09B924-9C98-3A34-97BB-76A089E2B464}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSessions\Resources\Icon128.png">
+      <Filter>Plugins\AdvancedSessions\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSteamSessions">
+      <UniqueIdentifier>{740F8616-A9B4-3B9B-96D8-C61750798FBC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSteamSessions\AdvancedSteamSessions.uplugin">
+      <Filter>Plugins\AdvancedSteamSessions</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSteamSessions\Config">
+      <UniqueIdentifier>{FAC2C4EC-7334-384A-8858-3BBDEAA3AA42}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSteamSessions\Config\FilterPlugin.ini">
+      <Filter>Plugins\AdvancedSteamSessions\Config</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSteamSessions\Resources">
+      <UniqueIdentifier>{889ED81C-A47F-3020-B7F3-EF01BA6AEB7F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSteamSessions\Resources\Icon128.png">
+      <Filter>Plugins\AdvancedSteamSessions\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSteamSessions\Source">
+      <UniqueIdentifier>{D96B0581-0D1E-3EAD-A89C-A9EE4E8E7D00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions">
+      <UniqueIdentifier>{F359A985-5132-30F3-B980-E2AC9F67A6AC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\AdvancedSteamSessions.Build.cs">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions</Filter>
+    </None>
+    <Filter Include="Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes">
+      <UniqueIdentifier>{258A7927-0BE8-384F-801B-8DFB45E90123}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamFriendsLibrary.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamSessions.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamWorkshopLibrary.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamNotificationsSubsystem.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamRequestGroupOfficersCallbackProxy.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamWSRequestUGCDetailsCallbackProxy.h">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private">
+      <UniqueIdentifier>{0597C23D-6485-3B4D-9707-FF52278B2B71}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\AdvancedSteamFriendsLibrary.cpp">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\AdvancedSteamSessions.cpp">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\AdvancedSteamWorkshopLibrary.cpp">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\SteamRequestGroupOfficersCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\SteamWSRequestUGCDetailsCallbackProxy.cpp">
+      <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerProject">
+      <UniqueIdentifier>{FA2F8E47-F284-3672-AFA0-135E508C9BBE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MultiplayerProject\MultiplayerProject.Build.cs">
+      <Filter>Source\MultiplayerProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\MultiplayerProject\MultiplayerProject.cpp">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProject.h">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\MultiplayerProjectCharacter.cpp">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProjectCharacter.h">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\MultiplayerProjectGameMode.cpp">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProjectGameMode.h">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\MultiplayerProjectPlayerController.cpp">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\MultiplayerProjectPlayerController.h">
+      <Filter>Source\MultiplayerProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Private">
+      <UniqueIdentifier>{1B37FCE7-8B50-3346-956F-F91CABA08773}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Private\GameStateTimer.cpp">
+      <Filter>Source\MultiplayerProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Private\ObstacleSpawner.cpp">
+      <Filter>Source\MultiplayerProject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerProject\Public">
+      <UniqueIdentifier>{DB6CF28F-9C10-345B-B00E-4FF3EADF840C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Public\GameStateTimer.h">
+      <Filter>Source\MultiplayerProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Public\ObstacleSpawner.h">
+      <Filter>Source\MultiplayerProject\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat">
+      <UniqueIdentifier>{B5A8C4C0-7D5A-36C3-ADD6-365903FB7C9B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat\AI">
+      <UniqueIdentifier>{C27219B4-001D-34A6-BB3C-6B225B7635E4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat\Animation">
+      <UniqueIdentifier>{7A8633DA-1CBF-3834-B441-792060F22F45}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{A73E75AA-6DA3-30A4-B606-42EBB0D59AE2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{59416BBC-F314-3A63-B644-6A795437DE52}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Combat\UI">
+      <UniqueIdentifier>{F6C1076E-120D-3B5A-BCA1-05D7F3ECB3DB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\MultiplayerProject\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Platforming">
+      <UniqueIdentifier>{8DCE8FAE-D828-3F16-BB22-B848D2508143}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\MultiplayerProject\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_Platforming\Animation">
+      <UniqueIdentifier>{1C98E6B6-FAA7-3BE7-A6AC-10FA828424A9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\MultiplayerProject\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\MultiplayerProject\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_SideScrolling">
+      <UniqueIdentifier>{91647D9B-35D5-3FD1-95D8-BBB40B1475DA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{02E13FA0-83DA-3A86-9804-5E1DBC9DB788}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{07203323-6539-3519-B783-8188C83F5733}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{A7A22DA6-9EB3-3EDF-B0C2-D35FE0D9A69F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\MultiplayerProject\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{33FE7993-6054-385A-9C76-D15B5D66B683}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MultiplayerProject\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\MultiplayerProject\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
